@@ -1,0 +1,54 @@
+# Experiment hparams
+replicate: 0
+seed: 6174
+# Model hparams
+model:
+  vgg16gelu:
+    loss_name: soft_cross_entropy
+# Training data hparams
+train_data:
+  cifar10labelnoise:
+    is_train: True
+    drop_last: True
+    shuffle: True
+    datadir: /home/data/cifar10
+    download: False
+    sigma: 0.0
+train_batch_size: 128
+# Training hparams
+max_duration: 3000000ba
+optimizer: 
+  sgd:
+    lr: 0.02
+    momentum: 0.9
+    weight_decay: 0.0005
+schedulers:
+  multistep_with_warmup:
+    t_warmup: 1000ba
+    milestones: [3000000ba]
+  #constant: {}
+# Evaluation hparams
+eval_data:
+  cifar10:
+    is_train: False
+    drop_last: False
+    shuffle: False
+    datadir: /home/data/cifar10
+    download: False
+eval_batch_size: 2000
+# Training hparams
+algorithms:
+  channels_last: {}
+callbacks: 
+  lr_monitor: {}
+  checkpoint_saver: 
+    save_interval: 20000ba
+# Non-id hparams (optional)
+dataloader:
+  persistent_workers: False
+loggers:
+  in_memory: {}
+  # wandb:
+  #   project: 
+  #   entity: 
+  #   tags: 
