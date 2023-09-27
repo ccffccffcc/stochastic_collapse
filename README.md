@@ -25,7 +25,7 @@
    ```
 
 ## Run Experiment
-Assign environment variable `DATA_DIR` and `EXP_DIR` to your data directory and logging saving directory.
+Assign environment variable `DATA_DIR` and `EXP_DIR` to your data directory and logging saving directory. The experiments configurations can be found at [`/configs`](./configs)
 
 To run experiment, for example, you can use the following codes:
    ```
@@ -35,7 +35,7 @@ To finetune a trained model, for example, you can use the following codes:
    ```
    python run/exp.py finetune -f configs/cifar10_sgd/train_sce_gelu_lbn_final_finetune.yaml
    ```
-
+Codes for experiments with toy models can be found at [`/nbs`](./nbs).
 ## Citation
 
    If you find our results or codes useful for your research, please consider citing our paper:
