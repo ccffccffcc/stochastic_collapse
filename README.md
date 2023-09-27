@@ -23,6 +23,18 @@
    ```
    python run/make_cifar.py
    ```
+
+## Run Experiment
+Assign environment variable `DATA_DIR` and `EXP_DIR` to your data directory and logging saving directory.
+To run experiment, for example, you can use the following codes:
+   ```
+   python run/exp.py train -f configs/cifar10_sgd/train_sce_gelu_resnet.yaml
+   ```
+To finetune a trained model, for example, you can use the following codes:
+   ```
+   python run/exp.py finetune -f configs/cifar10_sgd/train_sce_gelu_lbn_final_finetune.yaml
+   ```
+
 ## Citation
 
    If you find our results or codes useful for your research, please consider citing our paper:
