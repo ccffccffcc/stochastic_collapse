@@ -1,5 +1,5 @@
 # Experiment hparams
-exp_hash: fa6f69bb25445bc94d6dda4eff126bcf
+exp_hash: #fill in the experiment hash to finetune
 load_batch: 20000
 replicate: 0
 seed: 6174
