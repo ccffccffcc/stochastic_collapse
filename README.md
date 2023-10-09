@@ -26,7 +26,7 @@ In this work, we reveal a strong implicit bias of stochastic gradient descent (S
    pip install black GPUtil isort ipython jupyter matplotlib pandas python-dotenv seaborn scipy wandb ffcv numba opencv-python cupy-cuda113
    pip install -e .
    ```
-5. **Test installation**: Please set environment variable `DATADIR` to the desired directory for dataset. You would either start to download or verify the CIFAR dataset.
+5. **Test installation**: Please set environment variable `DATA_DIR` to the desired directory for dataset. You would either start to download or verify the CIFAR dataset.
    ```
    python run/make_cifar.py
    ```
