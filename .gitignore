@@ -1,0 +1,12 @@
+/exps/
+/nbs/exps/
+wandb/
+nohup.out
+*.pyc
+*.ipynb_checkpoints/
+*.log
+*.tar
+*.pth
+*.out
+*.pickle
+*.pdf
