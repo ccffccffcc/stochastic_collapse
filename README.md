@@ -36,11 +36,11 @@ Assign environment variable `DATA_DIR` and `EXP_DIR` to your data directory and 
 
 To run experiment, for example, you can use the following codes:
    ```
-   python run/exp.py train -f configs/cifar10_sgd/train_sce_gelu_resnet.yaml
+   python run/exp.py train -f configs/cifar10_sgd/train_sce_gelu.yaml
    ```
 To finetune a trained model, for example, you can use the following codes:
    ```
-   python run/exp.py finetune -f configs/cifar10_sgd/train_sce_gelu_lbn_final_finetune.yaml
+   python run/exp.py finetune -f configs/cifar10_sgd/train_sce_gelu_finetune.yaml
    ```
 Codes for experiments with toy models can be found at [`/nbs`](./nbs).
 
